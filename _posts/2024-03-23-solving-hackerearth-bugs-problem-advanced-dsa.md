@@ -4,7 +4,7 @@ title: Solving the "Bugs" Hackerearth problem with a clever heap
 date: 2024-03-23 01:10
 category: Data Structures
 tags: ["data-structures", "algorithms", "dsa", "heap", "binary-search-tree", "fenwick-tree", "binary-indexed-tree", "advanced", "coding", "interview", "bst", "hackerearth"]
-summary: Here I deepdive into an advanced DSA problem and suggest multiple solutions.
+summary: Here I deep-dive into an advanced DSA problem and suggest multiple solutions.
 ---
 
 ## TABLE OF CONTENTS
