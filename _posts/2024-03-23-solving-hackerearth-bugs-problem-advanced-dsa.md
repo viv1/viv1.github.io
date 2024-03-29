@@ -128,8 +128,6 @@ The core idea behind this approach is to maintain two separate heaps: a min-heap
 > Wondering if you have seen a related approach anywhere ? Google "Median in a stream of numbers" problem, where you maintain 2 heaps of equal size.
 {: .prompt-tip }
 
-( {: .prompt-info }
-
 ***Algorithm:***
 ```md
 Initialize an empty min-heap minHeap and an empty max-heap maxHeap.
