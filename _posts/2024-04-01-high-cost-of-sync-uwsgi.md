@@ -26,7 +26,7 @@ summary: We talk about how the traditional synchronous web server protocol can b
 <!-- TOC --><a href="#" name="introduction"></a>
 ## Introduction
 
-`Python` is a popular choice for building programming due to its simplicity, readability, and vast ecosystem. Extending python as a webserver in a production environment is a little tricky due to the python [`GIL`](https://en.wikipedia.org/wiki/Global_interpreter_lock). It basically renders most CPU bound multithreading pointless. We look into a popular option used widely and when and how it fails.
+`Python` is a popular choice for building programming due to its simplicity, readability, and vast ecosystem. Extending python as a webserver in a production environment is a little tricky due to the python [`GIL`](https://en.wikipedia.org/wiki/Global_interpreter_lock){:target="_blank"}. It basically renders most CPU bound multithreading pointless. We look into a popular option used widely and when and how it fails.
 
 <!-- TOC --><a href="#" name="python-on-web"></a>
 ## Python on Web
@@ -35,8 +35,8 @@ summary: We talk about how the traditional synchronous web server protocol can b
 
 In this article, we are going to focus on how CPU bound tasks can lead to terribel user experience with `WSGI`.
 
->[`WSGI Standard`](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface) helps us in extending python support to the web, which makes creating web applications using python possible.
-One popular implementation in this standard is the [`uWSGI`](https://uwsgi-docs.readthedocs.io/en/latest/).
+>[`WSGI Standard`](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface){:target="_blank"} helps us in extending python support to the web, which makes creating web applications using python possible.
+One popular implementation in this standard is the [`uWSGI`](https://uwsgi-docs.readthedocs.io/en/latest/){:target="_blank"}.
 {:.prompt-info}
 
 
@@ -63,7 +63,7 @@ We will create a `server app` which will handle incoming requests. It is served 
 
 We will create a `client app` while will make severa (`20`) calls in parallel to the server at once. 
 
-> You can directly get the code from the [repository](https://github.com/viv1/blog-code-examples/tree/main/uWSGI_blog) .
+> You can directly get the code from the [repository](https://github.com/viv1/blog-code-examples/tree/main/uWSGI_blog){:target="_blank"}.
 {:.prompt-info}
 
 - Write a simple python application that return "true". Call it `app_main.py`
@@ -92,7 +92,7 @@ def application(env, start_response):
 
 ```
 
-- Create `Dockerfile` to do platform & OS independent setup for `uWSGI` (Assuming you have docker installed, otherwise you can install via [Docker website](https://www.docker.com/get-started/))
+- Create `Dockerfile` to do platform & OS independent setup for `uWSGI` (Assuming you have docker installed, otherwise you can install via [Docker website](https://www.docker.com/get-started/){:target="_blank"})
 
 ```Dockerfile
 # Use an official Python runtime as a parent image
@@ -225,10 +225,10 @@ The evolution of web frameworks and standards continues to address the limitatio
 <!-- TOC --><a href="#" name="references-and-further-reading"></a>
 ## References and Further Reading
 
-- [WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
-- [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html)
-- [ASGI](https://asgi.readthedocs.io/)
-- [asyncio](https://realpython.com/async-io-python/)
-- [celery](https://realpython.com/asynchronous-tasks-with-django-and-celery/)
+- [WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface){:target="_blank"}
+- [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html){:target="_blank"}
+- [ASGI](https://asgi.readthedocs.io/){:target="_blank"}
+- [asyncio](https://realpython.com/async-io-python/){:target="_blank"}
+- [celery](https://realpython.com/asynchronous-tasks-with-django-and-celery/){:target="_blank"}
 
 

@@ -3,7 +3,7 @@ layout: post
 title: Beggar's Method - Using combinatorics with coding
 date: 2024-03-31 14:42
 category: Math in Coding
-tags: ["permutation", "combination", "combinatorics", "beggars method", "maths", "coding", "problem solving"]
+tags: ["permutation", "combination", "combinatorics", "beggars method", "maths", "coding", "problem solving", "algorithms"]
 summary: We explore the 'problem-solving' synergy between maths and coding through the Beggar's Method and its variations.
 ---
 
@@ -282,6 +282,6 @@ The DP approach is `~3.5` times slower for such a small output. For a larger out
 <!-- TOC --><a href="#" name="references"></a>
 ## References
 
-- [https://kingseducation.in/mod/book/view.php?id=290&chapterid=58](https://kingseducation.in/mod/book/view.php?id=290&chapterid=58)
+- [https://kingseducation.in/mod/book/view.php?id=290&chapterid=58](https://kingseducation.in/mod/book/view.php?id=290&chapterid=58){:target="_blank"}
 
-- [https://qr.ae/pNuusN](https://qr.ae/pNuusN)
+- [https://qr.ae/pNuusN](https://qr.ae/pNuusN){:target="_blank"}

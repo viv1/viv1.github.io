@@ -33,7 +33,7 @@ We will walk through how a simple optimization concepts can make a huge differen
 
 Another important point to note is that making a `SQL` call (i.e. a Database call) is expensive. So, we want to minimize the number of calls to the Database.
 
-We assume you already know what SQL joins are. Informally, `SQL joins` allows you to query 2 or more related tables faster. To read more, you can checkout [SQL JOIN](https://en.wikipedia.org/wiki/Join_(SQL)) .
+We assume you already know what SQL joins are. Informally, `SQL joins` allows you to query 2 or more related tables faster. To read more, you can checkout [SQL JOIN](https://en.wikipedia.org/wiki/Join_(SQL){:target="_blank"}) .
 
 As we would expect, `Django` has corresponding methods to optimize queries:
 
@@ -347,6 +347,6 @@ Optimizing database queries is crucial for achieving high performance and scalab
 
 ## References
 
-[prefetch_related](https://docs.djangoproject.com/en/5.0/ref/models/querysets/#django.db.models.query.QuerySet.prefetch_related)
+[prefetch_related](https://docs.djangoproject.com/en/5.0/ref/models/querysets/#django.db.models.query.QuerySet.prefetch_related){:target="_blank"}
 
-[select_related](https://docs.djangoproject.com/en/5.0/ref/models/querysets/#django.db.models.query.QuerySet.select_related)
+[select_related](https://docs.djangoproject.com/en/5.0/ref/models/querysets/#django.db.models.query.QuerySet.select_related){:target="_blank"}

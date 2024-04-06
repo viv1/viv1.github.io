@@ -218,5 +218,5 @@ The Two Heaps approach strikes the best balance between time and space complexit
 <!-- TOC --><a href="#" name="references"></a>
 ## References:
 
-- [https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/victory-over-power-4a0cb459/](https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/victory-over-power-4a0cb459/)
-- [https://www.geeksforgeeks.org/order-statistic-tree-using-fenwick-tree-bit](https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/victory-over-power-4a0cb459/)
+- [https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/victory-over-power-4a0cb459/](https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/victory-over-power-4a0cb459/){:target="_blank"}
+- [https://www.geeksforgeeks.org/order-statistic-tree-using-fenwick-tree-bit](https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/victory-over-power-4a0cb459/){:target="_blank"}
