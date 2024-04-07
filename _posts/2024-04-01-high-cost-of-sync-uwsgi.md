@@ -4,7 +4,7 @@ title: Python on the web - High cost of synchronous uWSGI
 date: 2024-04-01 12:30
 category: Web Technologies
 tags: ["uwsgi", "wsgi", "python", "web", "web technology", "GIL", "asgi", "asyncio"]
-summary: We talk about how the traditional synchronous web server protocol can be disadvantageous.
+description: We talk about how the traditional synchronous web server protocol can be disadvantageous.
 ---
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->

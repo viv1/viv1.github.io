@@ -4,7 +4,7 @@ title: Beggar's Method - Using combinatorics with coding
 date: 2024-03-31 14:42
 category: Math in Coding
 tags: ["permutation", "combination", "combinatorics", "beggars method", "maths", "coding", "problem solving", "algorithms"]
-summary: We explore the 'problem-solving' synergy between maths and coding through the Beggar's Method and its variations.
+description: We explore the 'problem-solving' synergy between maths and coding through the Beggar's Method and its variations.
 ---
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->

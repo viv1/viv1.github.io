@@ -4,7 +4,7 @@ title: Inclusion-Exclusion Principle and its variations
 date: 2024-04-06 22:40
 category: Math in Coding
 tags: ["permutation", "combination", "combinatorics", "inclusion-exclusion-principle", "maths", "coding", "problem solving", "algorithms"]
-summary: We explore the Inclusion-Exclusion Principle, a powerful combinatorics technique for counting problems
+description: We explore the Inclusion-Exclusion Principle, a powerful combinatorics technique for counting problems
 ---
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->

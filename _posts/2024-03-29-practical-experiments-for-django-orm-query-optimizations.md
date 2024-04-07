@@ -4,7 +4,7 @@ title: Practical Experiments for Optimizing Django query with the power of SQL j
 date: 2024-03-29 23:13
 category: Performance
 tags: ["django", "performance", "optimization", "sql", "practical", "hands-on", "prefetch_related", "select_related", "join", "python", "n+1", "n+1 queries", "orm"]
-summary: Here we experiment with a couple of query optimization techniques for Django.
+description: Here we experiment with a couple of query optimization techniques for Django.
 ---
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 - [Introduction](#introduction)

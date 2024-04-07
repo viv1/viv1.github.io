@@ -4,7 +4,8 @@ title: Real World Production Issue And Debugging
 date: 2024-03-25 18:35
 category: Debugging
 tags: ["debugging", "production", "saml", "sso", "ntp", "ntpd", "log", "monitoring", "metric"]
-summary: This is a intriguing story of a real world production issue that we encountered and how we navigated our way to its resolution.
+description: This is an intriguing story of a real world production issue that we encountered and how we navigated our way to its resolution.
+pin: true
 ---
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
