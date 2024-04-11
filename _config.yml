@@ -54,8 +54,9 @@ google_site_verification: UoRKl9uZvrdSTUQmkVobOd-aVHIFWsXfKrkN3aM2dcg
 google_analytics:
   id: G-WG648846W5
 
-goatcounter:
-  id: # fill in your Goatcounter ID
+# Pageviews settings
+pageviews:
+  provider: # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
@@ -103,6 +104,7 @@ comments:
     category:
     category_id:
     mapping: # optional, default to 'pathname'
+    strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
