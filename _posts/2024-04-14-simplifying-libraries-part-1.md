@@ -180,6 +180,7 @@ The libraries must be compiled specifically for each architecture to ensure prop
 - `Emulation and Translation Layers`: In some cases, tools exist to emulate one `architecture` on another (e.g., running `x86` software on `ARM` through emulation). This can introduce performance overheads.
 - `Cross-Platform Frameworks`: Frameworks like `Qt` or `Electron` abstract away `OS/architecture` differences, but add their own dependencies.
 
+<!-- TOC --><a href="#" name="conclusion"></a>
  ## Conclusion
 
 Libraries play a pivotal role in modern software development. Understanding their types, trade-offs, and the challenges of cross-platform compatibility empowers us to make informed decisions about application architecture and dependency management. Mastering these details might seem daunting, but remember that even seasoned professionals sometimes find themselves scratching their heads over a missing library or an unexpected version conflict. While not an expert, but I have myself been frustrated with these issues numerous times.
