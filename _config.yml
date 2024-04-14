@@ -51,8 +51,10 @@ google_site_verification: UoRKl9uZvrdSTUQmkVobOd-aVHIFWsXfKrkN3aM2dcg
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id: G-WG648846W5
+# Web Analytics Settings
+analytics:
+  google:
+    id: G-WG648846W5
 
 # Pageviews settings
 pageviews:
