@@ -415,9 +415,9 @@ Notice the further reduction is asset size.
 [Code Splitting](https://webpack.js.org/guides/code-splitting/){:target="_blank"} is a way to split the bundled asset into multiple bundled assets, which can be loaded on demand, or in parallel. 
 We will see how to code split here, and take advantage of it in this and the next section.
 
-Do demonstrate this better, let's create a new page which only loads `Component1`. Remember that `Component1` uses `lodash/join`
+To demonstrate this better, let's create a new page which only loads `Component1`. Remember that `Component1` uses `lodash/join`.
 
-- Create 'NewApp.js' inside `src`, which only loads `Component1`:
+Create `NewApp.js` inside `src`, which only loads `Component1`:
 ```js
 import React from 'react';
 import Component1 from './components/Component1';
@@ -434,7 +434,8 @@ export default AppNew;
 ```
 {: file='NewApp.js'}
 
-- Create 'newindex.js' inside `src``:
+Create `newindex.js` inside `src`:
+
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
