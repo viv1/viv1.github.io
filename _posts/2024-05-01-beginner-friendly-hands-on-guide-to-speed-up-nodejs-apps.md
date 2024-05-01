@@ -325,9 +325,9 @@ Just like that, we have removed an unused component we created.
 <!-- TOC --><a href="#" name="minification"></a>
 ## Minification
 Next, we will do some minification. Minification is a process to reduce the total size of file contents by removing characters and parts which are deemed useless for machines. 
-FOr example, spaces in codes are simply a way for them to be readable by humans. However, from machine point of view,  these are harmless. Minification helps remove these additional spaces among other things. Let's use an external plugin to help minify further.
+For example, spaces in codes are simply a way for them to be readable by humans. However, from machine point of view,  these are harmless. Minification helps remove these additional spaces among other things. Let's use an external plugin to help minify further.
 
-Step 2:
+We will install a minimizer plugin:
 `npm install --save-dev terser-webpack-plugin`
 
 Now, add this in webpack.config.js under `modules.exports` and then run `npx webpack`:
@@ -613,7 +613,7 @@ webpack 5.91.0 compiled successfully in 2529 ms
 What is this asset ? Le's open it (Find it in `dist/4.js`).
 We see that `4.js` contains our `Component2` code. 
 
-Let;s now run `npx http-server -p 8000`, open `Developer Tools` and go to `Network Tab` and open `https://localhost:8000/dist`
+Let's now run `npx http-server -p 8000`, open `Developer Tools` and go to `Network Tab` and open `https://localhost:8000/dist`
 
 We see that `4.js` is not yet loaded.
 Click on the button `Load Component 2` and notice that  `4.js` gets loaded now.
