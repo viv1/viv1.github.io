@@ -1,1 +1,76 @@
 <!-- Newletter Email Submission -->
+
+<div id="form-container" style='background:steelblue;padding:10px 10px 0px 10px;border-radius:5px;font-family:fangsong;'>
+<h2>Subscribe for latest posts</h2>
+<span style='font-family:monospace;'>Share your email. (expect ~1 email/week.)</span>
+
+    <div id="input-email-container" style='padding:10px 0px'>
+        <input id="email" type="email" name="email" required style='border-radius:5px;width:100%;display:block;'/>
+        <button type="button" id="email-submit" style='border-radius:5px;;display:block;margin:10px 0;'>
+        Submit
+        </button>
+    </div>
+    <div id="response-container"></div>
+</div>
+
+<script type="text/javascript">
+
+var btnEmailSubmission = document.getElementById('email-submit');
+var emailInputContainer = document.getElementById('input-email-container');
+
+var responseContainerEmailSubmission = document.getElementById('response-container');
+
+var debounce = (callback, wait) => {
+    let timeoutId = null;
+    return (...args) => {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => {
+        callback(...args);
+      }, wait);
+    };
+  };
+
+var handleSubmit = debounce(async (event) => {
+    event.preventDefault(); // Prevent the default form submission
+    var formData = new FormData();
+    var emailInput = document.getElementById('email');
+    responseContainerEmailSubmission.style.color = 'red';
+    if (emailInput.value.trim() === '' || !emailInput.validity.valid) {
+        responseContainerEmailSubmission.innerText = "Invalid Email. Please check.";
+        return;
+    } else {
+        responseContainerEmailSubmission.innerText = '';
+    }
+    var emailInputValue = document.getElementById('email').value;
+    formData.set('email', emailInputValue)
+    try {
+        var response = await fetch('https://wewake-newsletter.hello-e94.workers.dev', {
+            method: 'POST',
+            body: formData
+        });
+
+        var data = await response.json();
+
+        let msg = "Your email could not be added. Please email AT hello@wewake.dev";
+        
+        if (data['status'] == 200) {
+            msg = "Your email was successfully added. To remove, email AT hello@wewake.dev";
+            responseContainerEmailSubmission.innerText = msg;
+            emailInputContainer.style.display = 'none';
+            responseContainerEmailSubmission.style.color = 'green';
+        } else {
+            responseContainerEmailSubmission.innerText = msg;
+        }
+    } catch (error) {
+        responseContainerEmailSubmission.innerText = msg;
+        console.error('Error submitting form:', error);
+    }
+}, 250);
+
+function emailSubmission() {
+    btnEmailSubmission.addEventListener('click', handleSubmit);
+};
+
+emailSubmission();
+
+</script>
