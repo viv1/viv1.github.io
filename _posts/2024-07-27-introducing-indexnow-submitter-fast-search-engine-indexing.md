@@ -3,7 +3,7 @@ layout: post
 title: "Introducing IndexNow Submitter: Fast Search Engine Indexing"
 date: 2024-07-27 11:00
 category: Production
-tags: ["nextjs", "indexnow", "fast", "index", "bing", "yandex", "naver", "seznam.cz", "yep"]
+tags: ["nextjs", "indexnow", "fast", "index", "bing", "yandex", "naver", "seznam.cz", "yep", "duckduckgo"]
 description: Introducing IndexNow Submitter, an npm module I created to boost your node app's SEO with faster indexing using IndexNow protocol.
 ---
 
@@ -33,7 +33,7 @@ Search engine optimization is an ongoing battle. You work hard to create great c
 
 That's where IndexNow Submitter comes in. This npm module provides a simple, efficient, and flexible way to submit your URLs to search engines, ensuring that your content gets indexed as quickly as possible.
 
-> The IndexNow protocol is implemented by several major search engines like bing, yandex, naver, seznam.cz and yz. However, google has not implement it yet.
+> The IndexNow protocol is implemented by several major search engines like bing (and therefore, duckduckgo), yandex, naver, seznam.cz and yz. However, google has not implement it yet.
 {:.prompt-info}
 
 <!-- TOC --><a href="#" name="key-features"></a>
@@ -121,7 +121,7 @@ IndexNow Submitter also comes with a CLI, making it easy to use in your scripts 
 # Submit a single URL
 INDEXNOW_KEY=your-api-key INDEXNOW_HOST=your-website.com npx indexnow-submitter submit https://your-website.com/new-page
 
-# Submit URLs from a file
+# Submit URLs from a file (keep single url in each line)
 INDEXNOW_KEY=your-api-key INDEXNOW_HOST=your-website.com npx indexnow-submitter submit-file urls.txt
 
 # Submit URLs from a sitemap
