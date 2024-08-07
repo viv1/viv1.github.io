@@ -32,7 +32,7 @@ This little guide will walk you through setting up and using Gmail's SMTP server
 Gmail's SMTP server offers several advantages for personal use.
 
 1. **Stability**: Gmail's infrastructure is robust and reliable.
-2. **Quick & Easy Setup**: You can set up Gmail SMTP in under 5 minutes.
+2. **Quick & Easy Setup**: You can set up Gmail SMTP in under 5 minutes, requires no domain management.
 3. **Reliability for Personal Use**: For individuals and small-scale senders, Gmail's SMTP service is more than sufficient and highly dependable.
 4. **Budget Friendly**: Standard Gmail accounts allowws for 500 emails in a 24-hour period, making it an excellent choice for those on a budget.
 
@@ -95,7 +95,7 @@ transporter.sendMail(mailOptions, function(error, info){
 
 Instead of using Gmail SMTP, you can also use Gmail API to send emails. However, it's much easier to setup Gmail SMTP than setting up the Gmail API. Having said that, Gmail API is definitely more production ready. In fact, if you are looking for production ready SMTP servers, then there are other very stable, secure and reliable solutions like Sendgrid, Resend and the likes.
 
-For basic personal uses, Gmail SMTP, as you have already seen, is a much simpler and quicker setup. 
+For basic personal uses, Gmail SMTP, as you have already seen, is a much simpler and quicker setup. There is no modification needed for DNS, no steps needed for proving ownership, just setup an app password and it works right away.
 
 <!-- TOC --><a href="#" name="conclusion"></a>
 ## Conclusion
