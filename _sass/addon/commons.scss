@@ -929,6 +929,7 @@ $btn-mb: 0.5rem;
 #topbar-wrapper {
   height: $topbar-height;
   background-color: var(--topbar-bg);
+  border-radius: .625rem;
 }
 
 #topbar {
