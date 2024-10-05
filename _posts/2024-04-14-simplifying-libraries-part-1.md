@@ -61,8 +61,11 @@ Borrowing Tool kit is analogous to `Dynamic/Shared Library`.
 ### Where Things Get Tricky with Borrowing Tool kit
 
 ***`Missing Tools`***: Your friend's computer, running a different operating system or maybe an older version, might not have that SuperFancy Graphics Toolkit, or it has an outdated version.
+
 ***`Wrong Toolshed`***: You try running that Linux project on Windows, but the program wants libraries that are only in the Linux toolshed.
+
 ***`Different Toolshed`***: You try running that Linux project on Windows, using implementation of a similar dependency library for Windows, but the implementation differences lead to slightly different output.
+
 ***`DIY Headaches`***: In professional settings, this gets even weirder. Your fancy app works on your version of Linux, but the company server has a slightly different setup – a different toolkit version can lead to unexpected glitches.
 
 <!-- TOC --><a href="#" name="the-beauty-of-borrowing-the-tool-kit"></a>
@@ -71,8 +74,11 @@ Borrowing Tool kit is analogous to `Dynamic/Shared Library`.
 Despite the compatibility headaches, shared libraries are amazing:
 
 ***`Updates`***: Security flaw in that SuperFancy Graphics Toolkit? Update the one in the toolshed, and poof, all the games and programs using it are patched.
+
 ***`Space advantage`***: Imagine if every game had its own copy of the graphics code. Your hard drive would scream! Shared libraries let everyone use that same, vetted toolkit.
+
 ***`Ease of Updates`***: Updating a shared library can provide new features or patches to all applications that use it, without needing to recompile them.
+
 ***`Interoperability`***: Shared libraries can help in standardizing code across applications, leading to more reliable and consistent behavior across different programs.
 
 
