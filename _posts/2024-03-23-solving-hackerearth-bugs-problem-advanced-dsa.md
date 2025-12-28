@@ -5,7 +5,6 @@ date: 2024-03-23 01:10
 category: Data Structures
 tags: ["data-structures", "algorithms", "dsa", "heap", "binary-search-tree", "fenwick-tree", "binary-indexed-tree", "advanced", "coding", "interview", "bst", "hackerearth"]
 description: Here I deep-dive into an advanced DSA problem and suggest multiple solutions.
-pin: true
 ---
 
 ## TABLE OF CONTENTS

@@ -5,6 +5,7 @@ date: 2024-04-14 09:22
 category: Operating Systems
 tags: ["library", "static library", "dynamic library", "shared library", "static linking", "dynamic linking", "system library"]
 description: We talk about library binaries, and its types, advantages, disadvantages, and focus on compatibility across platforms with respect to shared libraries.
+pin: true
 ---
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->

@@ -3,7 +3,7 @@ layout: post
 title: "Why Your Python Logs Vanish in Docker (and How PYTHONUNBUFFERED=1 Saves the Day)"
 date: 2025-12-26 05:30
 category: Python
-tags: ["python", "docker", "kubernetes", "logging", "debugging", "containers", "pythonbuffered", "tty", "terminal"]
+tags: ["python", "docker", "kubernetes", "logging", "debugging", "containers", "pythonunbuffered", "tty", "terminal"]
 description: "Your Python app works fine locally, but in Docker, the logs are MIA. Here's why Python's output buffering drives container users crazy—and how one environment variable fixes everything."
 ---
 
@@ -26,7 +26,7 @@ description: "Your Python app works fine locally, but in Docker, the logs are MI
 
 ## The Mystery: Why are my logs disappearing ?
 
-This has unfortnately happened almost every time I have come back to using python in my little side projects, or experiments.
+This has unfortunately happened almost every time I have come back to using python in my little side projects, or experiments.
 
 I create a neat little Python app. It runs perfectly, printing helpful logs at every step:
 
