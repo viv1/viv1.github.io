@@ -1,6 +1,5 @@
 ---
 title: Text and Typography
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 author: cotes
 date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
@@ -14,22 +13,21 @@ image:
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
+This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
+
 ## Headings
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-# H1 — heading
+# H1 - heading
 {: .mt-4 .mb-0 }
 
-## H2 — heading
+## H2 - heading
 {: data-toc-skip='' .mt-4 .mb-0 }
 
-### H3 — heading
+### H3 - heading
 {: data-toc-skip='' .mt-4 .mb-0 }
 
-#### H4 — heading
+#### H4 - heading
 {: data-toc-skip='' .mt-4 }
-<!-- markdownlint-restore -->
 
 ## Paragraph
 
@@ -46,15 +44,15 @@ Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas int
 ### Unordered list
 
 - Chapter
-  - Section
-    - Paragraph
+  + Section
+    * Paragraph
 
 ### ToDo list
 
 - [ ] Job
-  - [x] Step 1
-  - [x] Step 2
-  - [ ] Step 3
+  + [x] Step 1
+  + [x] Step 2
+  + [ ] Step 3
 
 ### Description list
 
@@ -70,8 +68,6 @@ Moon
 
 ## Prompts
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
 > An example showing the `tip` type prompt.
 {: .prompt-tip }
 
@@ -83,15 +79,14 @@ Moon
 
 > An example showing the `danger` type prompt.
 {: .prompt-danger }
-<!-- markdownlint-restore -->
 
 ## Tables
 
 | Company                      | Contact          | Country |
-| :--------------------------- | :--------------- | ------: |
+|:-----------------------------|:-----------------|--------:|
 | Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    |      UK |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
+| Island Trading               | Helen Bennett    | UK      |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
 
 ## Links
 
@@ -113,7 +108,7 @@ Here is the `/path/to/the/file.extend`{: .filepath}.
 
 ### Common
 
-```text
+```
 This is a common code snippet, without syntax highlight and line number.
 ```
 
