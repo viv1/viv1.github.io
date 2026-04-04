@@ -7,6 +7,30 @@ tags: ["java", "maven", "pom.xml", "dependencies", "cve", "security", "trivy", "
 description: "Direct, transitive, shaded, BOM-managed, plugin dependencies and everything in between. A practical guide to resolving every type of Maven dependency vulnerability."
 ---
 
+- [Introduction](#introduction)
+- [Finding Vulnerabilities](#finding-vulnerabilities)
+   * [Maven Dependency Tree](#maven-dependency-tree)
+   * [Trivy, Grype and Other Scanners](#trivy-grype-and-other-scanners)
+   * [Read the CVE](#read-the-cve)
+- [Bump the Version (Direct Dependency)](#bump-the-version-direct-dependency)
+- [Override Transitive Dependencies](#override-transitive-dependencies)
+   * [How Maven Resolves Versions](#how-maven-resolves-versions)
+   * [Option 1: Upgrade the Parent Dependency](#option-1-upgrade-the-parent-dependency)
+   * [Option 2: Force via dependencyManagement](#option-2-force-via-dependencymanagement)
+   * [Option 3: Promote to Direct Dependency](#option-3-promote-to-direct-dependency)
+   * [Option 4: Exclude and Re-add](#option-4-exclude-and-re-add)
+   * [The Diamond Dependency Problem](#the-diamond-dependency-problem)
+   * [Verify the Fix](#verify-the-fix)
+- [Upgrade the BOM](#upgrade-the-bom)
+- [Parent POM and Multi-Module Projects](#parent-pom-and-multi-module-projects)
+- [Shaded and Embedded Dependencies](#shaded-and-embedded-dependencies)
+- [Plugin Dependencies](#plugin-dependencies)
+- [Scope, False Positives and Suppression](#scope-false-positives-and-suppression)
+- [Verification and Closing the Loop](#verification-and-closing-the-loop)
+- [When It's Not in Your POM at All](#when-its-not-in-your-pom-at-all)
+- [Conclusion](#conclusion)
+- [References](#references)
+
 ## Introduction
 
 If you have worked on any Java project long enough, you have dealt with this. A security scan flags a CVE in one of your dependencies. Sometimes it is straightforward, you bump a version and move on. Other times, you spend hours tracing through the dependency tree trying to figure out where a vulnerable library is even coming from.

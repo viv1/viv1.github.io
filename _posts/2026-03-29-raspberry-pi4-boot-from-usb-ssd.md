@@ -7,6 +7,18 @@ tags: ["raspberry-pi", "ssd", "usb-boot", "storage", "sd-card"]
 description: A practical reference for moving Raspberry Pi 4 from SD card boot to USB SSD boot — commands, expected output, and common pitfalls.
 ---
 
+- [Why Move to SSD?](#why-move-to-ssd)
+- [Prerequisites](#prerequisites)
+- [Step 1: Check Your Bootloader](#step-1-check-your-bootloader)
+- [Step 2: Check Boot Order](#step-2-check-boot-order)
+- [Step 3: Partition the SSD](#step-3-partition-the-ssd)
+- [Step 4: Copy the Boot Partition](#step-4-copy-the-boot-partition)
+- [Step 5: Copy the Root Filesystem](#step-5-copy-the-root-filesystem)
+- [Step 6: Fix fstab on the SSD](#step-6-fix-fstab-on-the-ssd)
+- [Step 7: Boot from SSD](#step-7-boot-from-ssd)
+- [Keeping the SD Card as Fallback](#keeping-the-sd-card-as-fallback)
+- [Common Pitfalls](#common-pitfalls)
+
 ## Why Move to SSD?
 
 SD cards are slow and wear out. A USB SSD gives you better performance, more storage, and longer lifespan. The Pi 4 supports USB boot natively through its EEPROM bootloader. I recently (re)decided to move back to SSD again. Chalking down how I did it.
